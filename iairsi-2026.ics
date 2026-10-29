@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IAIRSI//IAIRSI 2026//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:iairsi-2026@iairsi
+DTSTAMP:20261029T000000Z
+DTSTART:20261104T163000Z
+DTEND:20261104T230000Z
+SUMMARY:IAIRSI 2026 - Intercambio Academia-Industria: Robótica y Sistemas Inteligentes
+LOCATION:Hub de Innovación y Emprendimiento Eduardo Garza T.\, Tec de Monterrey\, Campus Monterrey
+DESCRIPTION:Ciclo de conferencias sobre Robótica Móvil\, Physical AI y Electrónica Automotriz. Registro gratuito: https://forms.gle/DHjqtuAv6iJz26CM9
+URL:https://forms.gle/DHjqtuAv6iJz26CM9
+END:VEVENT
+END:VCALENDAR
