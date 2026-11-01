@@ -221,7 +221,8 @@ p { margin: 0; }
   background: var(--surface); border: 1px solid var(--line);
 }
 .tl__org { font-size: clamp(21px, 2.2vw, 26px); font-weight: 800; letter-spacing: -0.01em; line-height: 1.2; }
-.tl__title { margin-top: 6px; color: var(--muted); font-size: 17px; line-height: 1.45; max-width: 62ch; }
+.tl__title { margin-top: 6px; color: var(--text); font-size: 17px; font-weight: 500; line-height: 1.45; max-width: 62ch; }
+.tl__speaker { margin-top: 8px; color: var(--cyan); font-size: 15px; font-weight: 600; }
 
 .tl--break .tl__body { background: transparent; border-style: dashed; }
 .tl--break .tl__org { font-size: 18px; font-weight: 600; color: var(--muted); }
@@ -279,6 +280,7 @@ p { margin: 0; }
 }
 .speaker h3 { margin: 22px 0 8px; font-size: 24px; font-weight: 800; letter-spacing: -0.01em; }
 .speaker p { color: var(--muted); font-size: 15px; }
+.speaker p.speaker__who { color: var(--cyan); font-weight: 600; margin-bottom: 6px; }
 @media (max-width: 960px) { .speakers { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .speakers { grid-template-columns: 1fr; } }
 
@@ -322,6 +324,24 @@ p { margin: 0; }
   .org--tec { height: 32px; }
 }
 .footer__legal { font-size: 13px; color: var(--muted); }
+.footer__groups { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 72px; }
+.footer__sponsor { padding-left: 48px; border-left: 1px solid var(--line); }
+.org--cimenl { height: 84px; opacity: 1; }
+@media (max-width: 600px) {
+  .footer__sponsor { padding-left: 0; border-left: 0; }
+  .org--cimenl { height: 70px; }
+}
+
+/* Sponsor strip under the agenda */
+.sponsor {
+  margin-top: 40px; display: flex; align-items: center; gap: 22px;
+  padding: 18px 24px; border-radius: var(--radius);
+  border: 1px solid var(--line-strong); background: rgba(255, 240, 210, .03);
+  max-width: 520px;
+}
+.sponsor__logo { height: 72px; width: auto; flex: none; }
+.sponsor__label { color: var(--muted); font-size: 14px; }
+.sponsor__name { font-size: 20px; font-weight: 800; margin-top: 2px; }
 
 @media (prefers-reduced-motion: reduce) {
   .timeline::after { transform: scaleY(1); }
