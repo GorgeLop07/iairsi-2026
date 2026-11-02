@@ -20,13 +20,6 @@ npx serve .
 python3 -m http.server 8000
 ```
 
-## Publicar en Vercel
-
-1. Sube este folder a un repo de GitHub.
-2. En Vercel: **Add New → Project → Import** el repo.
-3. Framework Preset: **Other**. Sin build command ni output directory.
-4. Deploy. Cada push a `main` se publica solo.
-
 ## Editar contenido
 
 - **Agenda**: cada bloque es un `<li class="slot">` en `index.html`. Los atributos `data-start` / `data-end` (formato 24 h, hora de Monterrey) controlan el resaltado en vivo.
